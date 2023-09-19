@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "62cafe17ddc59b437b3ac49a93a32e66",
+    "content-hash": "95f514cc42e7564f2970b493c636fad0",
     "packages": [
         {
             "name": "brick/math",
@@ -5856,6 +5856,57 @@
                 "source": "https://github.com/webmozarts/assert/tree/1.11.0"
             },
             "time": "2022-06-03T18:03:27+00:00"
+        },
+        {
+            "name": "xcrone/securepay-laravel",
+            "version": "0.1-beta",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/xcrone/securepay-laravel.git",
+                "reference": "936444b2a6e5e4b3b9c69d726b3ab27f21cc8dd9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/xcrone/securepay-laravel/zipball/936444b2a6e5e4b3b9c69d726b3ab27f21cc8dd9",
+                "reference": "936444b2a6e5e4b3b9c69d726b3ab27f21cc8dd9",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^7.4",
+                "php": ">=5.6.4"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Xcrone\\SecurePay\\SecurePayServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/Support/helpers.php"
+                ],
+                "psr-4": {
+                    "Xcrone\\SecurePay\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "xcrone",
+                    "email": "mail@zahir.my"
+                }
+            ],
+            "description": "SecurePay for Laravel",
+            "support": {
+                "issues": "https://github.com/xcrone/securepay-laravel/issues",
+                "source": "https://github.com/xcrone/securepay-laravel/tree/0.1-beta"
+            },
+            "time": "2023-09-19T13:40:40+00:00"
         }
     ],
     "packages-dev": [
@@ -8343,12 +8394,14 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "xcrone/securepay-laravel": 10
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": "^8.1"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.6.0"
 }
